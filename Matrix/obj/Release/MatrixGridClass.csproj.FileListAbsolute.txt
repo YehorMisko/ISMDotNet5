@@ -1,0 +1,6 @@
+C:\Users\jayde\source\repos\ISMDotNet5\Matrix\bin\Release\Matrix.dll
+C:\Users\jayde\source\repos\ISMDotNet5\Matrix\bin\Release\Matrix.pdb
+C:\Users\jayde\source\repos\ISMDotNet5\Matrix\obj\Release\MatrixGridClass.csproj.CoreCompileInputs.cache
+C:\Users\jayde\source\repos\ISMDotNet5\Matrix\obj\Release\Matrix.dll
+C:\Users\jayde\source\repos\ISMDotNet5\Matrix\obj\Release\Matrix.pdb
+C:\Users\jayde\source\repos\ISMDotNet5\Matrix\obj\Release\MatrixGridClass.csprojAssemblyReference.cache

@@ -1,0 +1,13 @@
+C:\Users\jayde\source\repos\ISMDotNet5\ISMDotNet5\bin\Release\ISMDotNet5.exe.config
+C:\Users\jayde\source\repos\ISMDotNet5\ISMDotNet5\bin\Release\ISMDotNet5.exe
+C:\Users\jayde\source\repos\ISMDotNet5\ISMDotNet5\bin\Release\ISMDotNet5.pdb
+C:\Users\jayde\source\repos\ISMDotNet5\ISMDotNet5\obj\Release\ISMDotNet5.csprojAssemblyReference.cache
+C:\Users\jayde\source\repos\ISMDotNet5\ISMDotNet5\obj\Release\ISMDotNet5.Properties.Resources.resources
+C:\Users\jayde\source\repos\ISMDotNet5\ISMDotNet5\obj\Release\ISMDotNet5.csproj.GenerateResource.cache
+C:\Users\jayde\source\repos\ISMDotNet5\ISMDotNet5\obj\Release\ISMDotNet5.csproj.CoreCompileInputs.cache
+C:\Users\jayde\source\repos\ISMDotNet5\ISMDotNet5\obj\Release\ISMDotNet5.exe
+C:\Users\jayde\source\repos\ISMDotNet5\ISMDotNet5\obj\Release\ISMDotNet5.pdb
+C:\Users\jayde\source\repos\ISMDotNet5\ISMDotNet5\bin\Release\Matrix.dll
+C:\Users\jayde\source\repos\ISMDotNet5\ISMDotNet5\bin\Release\Matrix.pdb
+C:\Users\jayde\source\repos\ISMDotNet5\ISMDotNet5\obj\Release\ISMDotNet5.csproj.CopyComplete
+C:\Users\jayde\source\repos\ISMDotNet5\ISMDotNet5\obj\Release\ISMDotNet5.MyMatrix.resources
