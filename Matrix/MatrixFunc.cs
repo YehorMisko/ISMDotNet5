@@ -168,66 +168,79 @@ namespace MatrixLibrary
         }
         public int MaxParalelSum()
         {
-          
-            int[] arr = new int[Matr.GetLength(0) + Matr.GetLength(1) - 2];              /* 1 2 
-                                                                                          * 1 2
-                                                                                          * 1 2
-                                                                                          */ 
+            int[] arr = new int[Matr.GetLength(0) + Matr.GetLength(1) - 2];
             int k = 0;
-            for (int q = 1; q < Matr.GetLength(0) * Matr.GetLength(1); q++)
-            {
-                for (int j = Matr.GetLength(1) - 1; j >= q; j--)
+           
+                for (int j = 1; j < Matr.GetLength(1); j++)
                 {
-                    int i = j - q;
-                    if (i < Matr.GetLength(0) && j < Matr.GetLength(1))
+                    int n = 0;
+                   
+                    for(int q = j; q < Matr.GetLength(1);q++)
                     {
-                        arr[k] += Math.Abs(Matr[i, j]);
+                    if (n > Matr.GetLength(0) - 1)
+                        break;
+                    arr[k] += Matr[n,q];
+                        n++;                     
                     }
+                k++;
+                }
+          
+            
+            for (int i = 1; i < Matr.GetLength(0); i++)
+            {
+                int n = 0;
+
+                for (int q = i; q < Matr.GetLength(0); q++)
+                {
+                    if (n > Matr.GetLength(1) - 1)
+                        break;
+                    arr[k] += Matr[q, n];
+                    n++;
                 }
                 k++;
             }
             Array.Sort(arr);
-            return arr[arr.Length - 1];
+            return arr[arr.GetLength(0)-1];
+
         }
-       
+
         public int MinParalelSum()
         {
 
             int[] arr = new int[Matr.GetLength(0) + Matr.GetLength(1) - 2];
             int k = 0;
-            /*       for (int i = Matr.GetLength(0) - 1; i > 0; i--)
-                   {
 
-                       for (int j = Matr.GetLength(1) - 1, x = i; ; j--, x++)
-                       {
-                           if (j < 0 || x > Matr.GetLength(0) - 1)break;
-                           arr[k] += Math.Abs(Matr[x, j]);
-                       }
-                       k++;
-                   }
-                  for (int i = 1; i < Matr.GetLength(0); i++)
-                   {
-                       for (int j = Matr.GetLength(1) - 1, x = i; ; j--, x++)
-                       {
-                           if (j < 0 || x > Matr.GetLength(0) - 1) break;
-                           arr[k] += Math.Abs(Matr[x, j]);
-                       }
-                       k++;
-                   }
-          */
-            for (int q = 1; q < Matr.GetLength(0) * Matr.GetLength(1); q++)
+           for (int i = Matr.GetLength(0) - 2; i >= 0; i--)
             {
-                for (int j = 0; j <= q; j++)
+                int n = 0;
+               
+                for (int q = i; q >= 0; q--)
                 {
-                    int i = q - j;
-                    if (i < Matr.GetLength(0) && j < Matr.GetLength(1))
-                    {
-                        arr[k] += Math.Abs(Matr[i, j]);
-                    }
+                    if (n == Matr.GetLength(1))
+                        break;
+                    arr[k] += Math.Abs(Matr[q, n]);
+                    n++;
+         
                 }
-                    k++;
+                k++;
             }
-                    Array.Sort(arr);
+
+        for (int j = 1; j < Matr.GetLength(1); j++)
+            {
+                int n = Matr.GetLength(0)-1;
+               
+                for (int q = j; q < Matr.GetLength(1); q++)
+                {
+                    if (n < 0)
+                        break;
+                    arr[k] += Math.Abs(Matr[n, q]);
+                    n--;
+   
+                }
+                k++;
+            }
+  
+            Array.Sort(arr);
             return arr[0];
         }
         public int SumOfNegativeColElements()
